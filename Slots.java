@@ -2,19 +2,19 @@ import java.util.Scanner;
 
 
 class Slots {
-    public static int charge(){
+    public static int charge() {
         Scanner in = new Scanner(System.in);
         System.out.println("please enter the amount you wanna pay in: ");
         return in.nextInt();
     }
 
-    public static int bet(){
+    public static int bet() {
         Scanner in = new Scanner(System.in);
         System.out.println("please give me your bet: ");
         return in.nextInt();
     }
 
-    public static int rngnumber(){
+    public static int rngnumber() {
         return (int)(Math.random()*((3-1)+1))+1;
     }
 
@@ -36,7 +36,7 @@ class Slots {
         boolean running = true;
         while (running) {
             if(balance == 0){
-                balance =charge();
+                balance = charge();
             }
             int bet;
             while (true) {
@@ -107,7 +107,7 @@ class Slots {
                 if (exit.equals("c")) {
                     break;
                 } else if (exit.equals("end")) {
-                    if(balance >= first_balance){
+                    if(balance >= first_balance) {
                         System.out.println("congratulations you won "+(balance-first_balance)+" euro | wins: " +win+" loses: "+lose);
                     }
                     else if(balance <= first_balance){
