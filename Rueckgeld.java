@@ -6,6 +6,7 @@ class Rueckgeld{
         Scanner in = new Scanner(System.in);
         double rueckgeld = in.nextDouble();
         rueckgeld = rueckgeld *100;
+        
         while(rueckgeld != 0){
             if(rueckgeld >=5000) {
                 System.out.println("1x 50 euroschein");
@@ -19,7 +20,6 @@ class Rueckgeld{
                 System.out.println("1x 20 euroschein");
                 rueckgeld = rueckgeld -2000;
             }
-
             if(rueckgeld >=1000){
                 System.out.println("1x 10 euroschein");
                 rueckgeld = rueckgeld -1000;
@@ -64,7 +64,6 @@ class Rueckgeld{
                 System.out.println("2x 2 centmuenzen");
                 rueckgeld = rueckgeld -4;
             }
-
             if(rueckgeld >=2){
                 System.out.println("1x 2 centmuenze");
                 rueckgeld = rueckgeld -2;
