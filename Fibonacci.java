@@ -1,7 +1,6 @@
 class Fibonacci {
     public static void main(String[] args) {
         int i = 0;
-
         int fib1 = 0;
         int fib2 = 1;
 
@@ -10,9 +9,7 @@ class Fibonacci {
             System.out.println(erg);
             fib1 = fib2;
             fib2 = erg;
-
             i++;
         }
     }
-
 }
